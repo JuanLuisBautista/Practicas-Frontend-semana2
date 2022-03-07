@@ -15,8 +15,8 @@
                 <a href="#somos-bakery">¿QUIENES SOMOS?</a>
                 <a href="#nuestros-pasteles">PASTELES</a>
                 <a href="#Accesorios">ACCESORIOS</a>
-                <a href="#">HAS TU PROPIO PASTEL</a>
-                <a href="#">ORDENA AQUÍ</a>
+                <a href="#Make-cake">HAS TU PROPIO PASTEL</a>
+                <a href="#Pedido">ORDENA AQUÍ</a>
             </nav>
         </div>
     </header>
@@ -30,7 +30,7 @@
         <div class="container">
             <div class="img-container"></div>
             <div class="texto">
-                <h2>¡Somos Sweetie Bakery!</h2>
+                <h2><span class="color-acento">¡Somos Sweetie Bakery!</span></h2>
                 <p>Tradición familiar desde 1996 que nos distingue del resto de la competencia.<br>
                 utilizando los productos de la más alta calidad del día a día.</p>
                 <h6>-DEL HORNO A TU BOCA- <br>Since 1996 </h6>
@@ -82,7 +82,6 @@
     <section id="Accesorios">
         <div class="container">
             <h2>¡ESCOGE TUS ACCESORIOS FAVORITOS!</h2>
-            <p>Escoge tus accesorios favoritos dentro de nuestra gran selección</p>
             <div class="accesesorios">
                 <div class="carta">
                     <h3>Velita con Números</h3>
@@ -102,6 +101,66 @@
             </div>
         </div>
     </section>
+
+    <section id="Make-cake">
+            <fieldset>
+                <legend>¡HAS TU PROPIO PASTEL!</legend>
+                    <label for="sabor1">¡Selecciona tu sabor favorito!</label>
+                    <select id="sabor1" name="sabor1">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Canela">Canela</option>
+                    <option value="leches">3 Leches</option>
+                    <option value="Frutas">Frutas</option>
+                    <option value="Moka">Moka</option>
+                    </select>
+                
+                    <label for="sabor2">¡Selecciona tú segundo sabor favorito!</label>
+                    <select id="sabor1" name="sabor1">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Canela">Canela</option>
+                    <option value="leches">3 Leches</option>
+                    <option value="Frutas">Frutas</option>
+                    <option value="Moka">Moka</option>
+                    </select>
+                
+                    <label for="adorno">¡Selecciona tu Adorno Preferido!</label>
+                    <select name="adorno" id="adorno">
+                    <option value="Velitas">Velitas</option>
+                    <option value="Chispas">Chispas</option>
+                    <option value="Letras">Letras</option>
+                    </select>
+            </fieldset>
+    </section>
+
+
+    <section id="Pedido">
+        <fieldset>
+            <legend>¡INGRESA TUS DATOS Y CONFIRMA EL PEDIDO!</legend>
+            <label for="fname">Nombre(s):</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Apellido(s):</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="Celular">Telefono/Celular:</label>
+            <input type="number" id="Celular" name="Celular"><br><br>
+            <button>¡ENVIAR PEDIDO!</button>
+           </fieldset>
+    </section>
+
+
+    <section id="Datos">
+        <p>Estamos hubicados en la calle pozarica #123 colonia Bellavista, nuestro telefono es 1234567890
+        Estamos a tus ordenes los 365 días del año en un horario de antencion de 10:00 am a 8:00 pm.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Sweetie Bakery</p>
+        </div>
+    </footer>
 
 
 </body>
