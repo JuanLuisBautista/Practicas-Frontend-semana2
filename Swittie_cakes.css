@@ -20,6 +20,9 @@ padding: 0px;}
 p{font-size: 1.25em;}
 ul{list-style: none;}
 li{font-size: 1.25em;}
+label{font-size: 1em;
+font-weight: bold;
+font-family: "Times New Roman", Times, serif;}
 
 button{
     font-family: "Courier New", Courier, monospace;
@@ -33,11 +36,16 @@ button{
     background-color: 	#952F57;
 }
 
+select{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 button:hover{
     background-color: #5E2129;
 }
 
-.color-acento{ color: #952F57;}
+.color-acento{ color: #952F57; font-family: 'Brush Script MT',sans-serif;}
 .container{
     max-width: 1400px;
     margin: auto;
@@ -104,6 +112,10 @@ header a:hover{
     color: white;
 }
 
+#somos-bakery{
+    background-color: rgba(233,224,210);
+}
+
 #somos-bakery .container{
     text-align: center;
     padding: 200px 12px;
@@ -115,6 +127,258 @@ header a:hover{
 
 #nuestros-pasteles{
     background-color: rgb(233,224,210);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-pasteles h2{
     color: #952F57;
     text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+#nuestros-pasteles .container{
+    padding: 100px 0px;
+}
+
+#nuestros-pasteles h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-pasteles .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#nuestros-pasteles .pasteles .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Naked_cake.png");
+}
+
+#nuestros-pasteles .pasteles .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("fresa_cake.jpg");
+}
+
+#nuestros-pasteles .pasteles .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Cake_Rol.jpg");
+}
+
+#nuestros-pasteles .pasteles1 .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("3leches_cake.jpg");
+}
+
+#nuestros-pasteles .pasteles1 .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("frutas_cake.jpg");
+}
+
+#nuestros-pasteles .pasteles1 .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("pastel_moka.jpg");
+}
+
+#Accesorios{
+    background-color: rgb(233,224,210);
+    color: white;
+    text-align: center;
+}
+
+#Accesorios h2{
+    color: #952F57;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Accesorios p{
+    font-family: "Times New Roman", Times, serif;
+}
+
+#Acesorios .container{
+    padding: 100px 0px;
+}
+
+#Accesorios .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#Accesorios .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("velitas.jpg");
+}
+
+#Accesorios .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("harry.jpg");
+}
+
+#Accesorios .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("letras.jpg");
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+#hero h1{
+    font-size: 5em;
+}
+
+#somos-bakery .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#somos-bakery .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos-bakery h2{
+    margin-top: 0px;
+}
+
+#somos-bakery .img-container{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ), url("Kaka_cake.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 650px;
+    width: 450px;
+    border-radius: 15px;
+}
+
+
+
+#Make-cake{
+    background-color: rgba(233,224,210);
+    color: #952F57;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+#Make-cake legend{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#Make-cake label{
+    font-size: 1.5em;
+}
+
+#Make-cake fieldset{
+    width: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#Pedido{
+    background-color: rgba(233,224,210);
+    text-align: center;
+    justify-content: center;
+}
+
+fieldset label{
+    color: #952F57;
+}
+
+
+#Pedido legend{
+    color: #952F57;
+    font-size: 2em;
+    font-weight: bold;
+    justify-content: initial;
+}
+
+#Pedido input{
+    justify-content: space-evenly;
+}
+
+#Datos{
+    background-color: rgba(233,224,210);
+}
+#Datos p{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#footer{
+    background-color: rgba(233,224,210);
 }
